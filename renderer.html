@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tímatalva</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="Tímatalva" class="window">
+    <div class="header">
+      <div class="title">
+        <div class="title-line1">Tímatalva</div>
+        <div class="title-line2" id="titleSelected"></div>
+      </div>
+
+      <!-- Weekday pill  -->
+      <div class="weekday-wrapper">
+        <div id="weekday" class="weekday-pill">—</div>
+        <img id="santaHat" src="./jol.png" alt=" ">
+      </div>
+
+      <div class="controls">
+        <button id="refresh" title="Dagfør">⭮ </button>
+        <button id="settings" title="Stillingar">⚙</button>
+        <button id="close" title="Fjal">✕</button>
+      </div>
+    </div>
+
+    <div id="list" class="list"></div>
+    <div id="footer" class="footer"></div>
+  </div>
+
+  <!-- Settings modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-title">Stillingar</div>
+
+      <div class="row">
+        <div class="seg">
+          <button id="modeClass"   class="seg-btn active">Flokkur</button>
+          <button id="modeTeacher" class="seg-btn">Lærari</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="filterInput">Sálda</label>
+        <input id="filterInput" placeholder="Skriva t.d. 5..." />
+      </div>
+
+      <div class="row">
+        <label>Vel</label>
+        <select id="classSelect" size="10"></select>
+        <select id="teacherSelect" size="10" class="hidden"></select>
+      </div>
+
+      <div id="modalError" class="modal-error"></div>
+<!-- Notifications toggle switch -->
+<div style="display: flex; align-items: center; gap: 10px;">
+  <label class="switch" style="margin-bottom: 2;">
+    <input type="checkbox" id="notifToggle">
+    <span class="slider"></span>
+  </label>
+  <small style="margin: 0;">Boð</small>
+</div>
+      <button id="helpBtn" class="btn btn-help">Hjálp</button>
+
+      <div class="modal-actions">
+        <button id="saveName" class="btn">Goym</button>
+        <button id="cancelModal" class="btn btn-secondary">Angra</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "name": "Timatalva",
+  "version": "1.6.0",
+  "description": "Tímatalva - Windows 11",
+  "type": "module",
+  "main": "main.js",
+  "author": {
+    "name": "Eystein"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder -w"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "webuntis": "2.2.1"
+  },
+  "devDependencies": {
+    "electron": "^30.5.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "electronLanguages": [
+      "en-US",
+      "fo"
+    ],
+    "appId": "timatalva",
+    "productName": "Tímatalva",
+    "files": [
+      "main.js",
+      "preload.cjs",
+      "renderer.html",
+      "renderer.js",
+      "styles.css",
+      "help.html",
+      "icon.ico",
+      "icon.png",
+      "ohm.png",
+      "jol.png",
+      "node_modules/**",
+      "package.json"
+    ],
+    "extraResources": [
+      "icon.ico",
+      ".env"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
+  }
+}

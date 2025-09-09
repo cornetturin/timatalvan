@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fo">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Send hjálp!</title>
+  <style> /* "hjálp" knøttur */
+    :root { color-scheme: light dark; }
+    body { margin: 0; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    header { background: #13395d; color: #f5f5ff; padding: 16px 18px; }
+    main { max-width: 800px; margin: 0 auto; padding: 18px; }
+    h1, h2 { margin: 0; font-size: 20px; font-weight: 400; }
+    h2 { margin: 24px 0 8px; font-size: 18px; }
+    p { margin: 10px 0; }
+    code { background: #f2f2f2; padding: 2px 6px; border-radius: 6px; }
+    @media (prefers-color-scheme: dark) { code { background: #2a2a2a; } }
+
+  ::-webkit-scrollbar {
+    width: 15px;
+    background: #222;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5d5204;
+    border-radius: 8px;
+
+  }
+</style>
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tímatalvan <span id="showImgBtn" style="font-size:1.6rem;">⚓️</span></h1><div id="imgBox" style="display:none; margin-top:1rem;">
+  <img src="ohm.png" alt="mynd" style="max-width:100%; height:auto;" />
+</div>
+
+<script>
+  document.getElementById("showImgBtn").addEventListener("click", () => {
+    const box = document.getElementById("imgBox");
+    box.style.display = box.style.display === "block" ? "none" : "block";
+  });
+</script>
+  </header>
+  <main>
+  
+    <h3><b>Tímir tú heldur ikki at tendra browsaran, bara fyri at síggja tímatalvuna ?</b>
+      <br>
+      <br>🎉 Gleðiboð! 🥳</h3>
+    <p>Hendan tímatalvan vísir tímarnar fyri ein dag, frá WebUntis heimasíðuni, á tínum skrivaraborði.
+    </p>
+    <p>Tímatalvan verður dagførd, tá ið hon verður latin upp. <br>Niðast á glugganum sæst síðsta dagføringin.</p>
+    <p>Um tímatalvan er frammi, dagførir hon av sær sjálvari hvønn 15. minutt.</p>
+    <p>Eftir klokkan <b>18:00</b> vísir tímatalvan dagin í morgin.</p>
+    <p>Um onki er á skránni, vísir hon eisini tað. <br> <br></p>
+
+
+    <h2><b>🔔 Boð</b></h2>
+    <p>Tímatalvan boðar tær frá 5 minuttir áðrenn næsti tími byrjar.</p>
+    <p>Tú fært eisini boð um kaffi- og døgurðasteðg.</p>
+    <br>
+
+    <h2><b>🕹️ Nýtsla</b></h2>
+    <p>Vís ella fjal gluggan við at trýsta á ikonið, niðast til høgru á tínum skermi <b>→</b> <img src="icon.png" alt="App Icon" width="20" height="20"><br>
+    Sæst tað ikki? trýst so á <code><b>˄</b></code></p>
+
+      <p>Tú kanst dagføra tímatalvuna beinanvegin við  <b><code>⭮</code></b></p>
+      <p>Knøtturin <code><b>✕</b></code> fjalir tímatalvuna, ynskir tú at sløkkja hana<br>høgra-klikk so á ikonið, og vel <code><b>Gevst</b></code>.</p>
+      
+      Tú kanst nýta styttingina <b>Ctrl+Alt+T</b> ella <b>AltGr+T</b> til at vísa/fjala tímatalvuna -<br>hetta riggar tó ikki, um hon ikki er tendra frammanundan.</p>
+
+      <p>Tú kanst vejla, um tímatalvan skal starta av sær sjálvari, tá ið tú 
+        ritar inn. <br>Høgra-klikk á ikonið niðast til høgru á skerminum, fyri at broyta hetta.</p>
+      <p>Ynskir tú at síggja alla vikuna, trýst so á dagsins dag ovanfyri 
+        tímatalvuna<br> - so fer browsarin hjá tær til WebUntis heimasíðuna.</p>
+      <br>
+
+    <h2><b>🌱 Fyrstu ferð tú brúkar tímatalvuna</b></h2>
+    <p>Trýst á stillingar <code>⚙</code> → vel tín flokk/lærara úr listanum → Trýst síðani á 
+      <code><b>Goym</b></code> knøttin.<br> Valið verður goymt, og neyðugt er ikki at gera hetta aftur.<p>Hevur tú valt ein flokk, sært tú td. allar tímarnar hjá M5.</p>
+    <p>Ert tú lærari, so velur tú bara tínar forbókstavir úr listanum, og tímatalvan hjá tær verður víst.</p>
+    <br>
+
+    <h2><b>🚧 Villur 🪲</b></h2>
+    <p>Um eingir tímar síggjast, kann tað vera frídagur.<br>
+      Kanna um netið riggar.<br>Royn at dagføra.<br></p>
+    <p>Síggjast tímarnir - men eingir flokkar/lærarar á listanum? → sløkk og tendra aftur.<br>Er klokkan røtt á tíni teldu?<br>
+      Setir tú klokkuna á "automatiska justering" átti alt at rigga.<br></p>
+    <p>Gevið gætur - tímatalvan riggar bert, um Vinnuháskúlin heldur á at brúka WebUntis,<br>og um WebUntis ikki ger stórar broytingar á heimasíðu teirra.</p>
+    <br>
+
+    <h2><b>🔐 Privatlív</b></h2>
+    <p>Forritið lesur tímatalvuna frá WebUntis heimasíðuni, eftir klokkuni á tíni teldu.<br>
+      Flokksvalið verður goymt lokalt á tínari teldu, soleiðis at tímatalvan <br>vísur røttu tímarnar, tá ið hon tendrar.</p><br>
+
+    <h2><b>🗑️ Avinstallera</b></h2>
+    <p>Far inná <code>Settings</code> → <code>Apps</code> → <code>Installed apps</code>, vel "Tímatalva" og so <code>Uninstall</code>.</p>
+     <h1><br>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀👉⚓️</h1>
+  
+    <p><br><br>
+    <h2><i>Eystein ©️
+      <br>2025</i></h2>
+      <small>v 1.6</small><br>
+      <small>Tímatalvan er open-source, um tú vilt sleppa at pilka alt sundur, ella gera betringar - <br>
+    so er hon tøk á github undir "timatalva-vh-webuntis"</small></p>
+      
+    
+
+  </main>
+</body>
+</html>
