@@ -52,9 +52,9 @@ The main logic lives in:
 
 To build your own `.exe` (Windows):
 ```bash
-npm run dist
+npm run build
 ```
-Make sure you’ve installed `electron-builder` if needed.
+Make sure you’ve installed `electron-builder`.
 
 ---
 
@@ -67,7 +67,7 @@ This project is licensed under the **MIT License**. See `LICENSE` for details.
 ## 🤝 Acknowledgements
 
 - WebUntis for powering the backend
-- OpenAI & ChatGPT for code support
+- OpenAI for code support
 - Faroese students and peers for testing & feedback
 
 ---
